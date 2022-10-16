@@ -78,4 +78,8 @@ app = Flask('app')
 def index():
     return m._repr_html_()
 
+@app.route('/mapa')
+def mapa():
+    return m._repr_html_()
+
 app.run(host='0.0.0.0', port=8080)
