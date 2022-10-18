@@ -12,7 +12,7 @@ data_final = datetime.date.today() + datetime.timedelta(days = +1)
 
 data_inicial = datetime.date.today() + datetime.timedelta(days = -1)
 
-lista_ids_telemetricos_hc = '212643330,212943250,213043220,212842500,205442390,211742490,211443190,211743130,211843110,211943050,212143020,211842540,211842510,212442420,212742340,212642230,213242100,213742060,211642560,212842490'
+lista_ids_telemetricos_hc = '212643330,212943250,213043220,205442390,211742490,211443190,211743130,211843110,211943050,212143020,211842540,211842510,212442420,212742340,212642230,213242100,213742060,211642560,212842490,212742470'
 
 url = f'https://www.snirh.gov.br/hidroweb/rest/api/documento/gerarTelemetricas?codigosEstacoes={lista_ids_telemetricos_hc}&tipoArquivo=3&periodoInicial={data_inicial}T03:00:00.000Z&periodoFinal={data_final}T03:00:00.000Z'
 res = requests.get(url)
